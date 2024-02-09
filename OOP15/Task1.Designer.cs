@@ -67,6 +67,11 @@
             this.numBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.resultLabel5 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.numBox = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -79,6 +84,7 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -492,6 +498,11 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.resultLabel5);
+            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.numBox);
+            this.tabPage5.Controls.Add(this.pictureBox4);
             this.tabPage5.Controls.Add(this.label14);
             this.tabPage5.Location = new System.Drawing.Point(4, 27);
             this.tabPage5.Name = "tabPage5";
@@ -501,12 +512,63 @@
             this.tabPage5.Text = "Завдання 5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // resultLabel5
+            // 
+            this.resultLabel5.AutoSize = true;
+            this.resultLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.resultLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultLabel5.Location = new System.Drawing.Point(499, 463);
+            this.resultLabel5.Name = "resultLabel5";
+            this.resultLabel5.Size = new System.Drawing.Size(29, 31);
+            this.resultLabel5.TabIndex = 13;
+            this.resultLabel5.Text = "_";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(418, 315);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(204, 61);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Отримати результат";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(383, 184);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(266, 31);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Натуральне число n";
+            // 
+            // numBox
+            // 
+            this.numBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numBox.Location = new System.Drawing.Point(389, 232);
+            this.numBox.MaximumSize = new System.Drawing.Size(500, 50);
+            this.numBox.MinimumSize = new System.Drawing.Size(250, 50);
+            this.numBox.Name = "numBox";
+            this.numBox.Size = new System.Drawing.Size(250, 49);
+            this.numBox.TabIndex = 10;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(220, 43);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(641, 63);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(322, 428);
+            this.label14.Location = new System.Drawing.Point(325, 463);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(151, 31);
             this.label14.TabIndex = 8;
@@ -557,6 +619,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -604,6 +667,11 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox numBox;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label resultLabel5;
     }
 }
 

@@ -108,7 +108,7 @@ namespace OOP15
         {
             if (numBox1.Text == string.Empty || numBox2.Text == string.Empty)
             {
-                resultLabel4.Text = "введіть змінну!";
+                resultLabel4.Text = "введіть змінні!";
                 return;
             }
 
@@ -131,6 +131,37 @@ namespace OOP15
             catch (FormatException)
             {
                 resultLabel4.Text = "невірний формат змінних!";
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (numBox.Text == string.Empty)
+            {
+                resultLabel5.Text = "введіть змінну!";
+                return;
+            }
+
+            try
+            {
+                int N = Convert.ToInt32(numBox.Text);
+
+                string result = "не знайдено";
+                for (int i = 12; i <= N; i += 10)
+                {
+                    int temp1 = i / 10;
+                    int temp2 = (int)Math.Pow(temp1, 2);
+
+                    if (temp1 == temp2 % Math.Pow(10, i.ToString().Length - 1))
+                    {
+                        result = $"{i} = {temp2}; ";
+                    }
+                }
+                resultLabel5.Text = result;
+            }
+            catch (FormatException)
+            {
+                resultLabel5.Text = "невірний формат змінної!";
             }
         }
     }
