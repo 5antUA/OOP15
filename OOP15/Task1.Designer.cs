@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
             this.resultLabel1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,12 +40,14 @@
             this.boxX = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
             this.resultLabel2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.numberBox = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
             this.resultLabel3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,6 +58,7 @@
             this.sideA = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
             this.resultLabel4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,6 +67,7 @@
             this.numBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
@@ -73,6 +78,7 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -93,6 +99,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.resultLabel1);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label2);
@@ -108,13 +115,24 @@
             this.tabPage1.Text = "Завдання 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(314, 470);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(151, 31);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Результат:";
+            // 
             // resultLabel1
             // 
             this.resultLabel1.AutoSize = true;
-            this.resultLabel1.BackColor = System.Drawing.Color.Yellow;
+            this.resultLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.resultLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.resultLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.resultLabel1.Location = new System.Drawing.Point(526, 468);
+            this.resultLabel1.Location = new System.Drawing.Point(494, 470);
             this.resultLabel1.Name = "resultLabel1";
             this.resultLabel1.Size = new System.Drawing.Size(29, 31);
             this.resultLabel1.TabIndex = 6;
@@ -180,6 +198,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.resultLabel2);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.label3);
@@ -193,15 +212,27 @@
             this.tabPage2.Text = "Завдання 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(323, 474);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(151, 31);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Результат:";
+            // 
             // resultLabel2
             // 
-            this.resultLabel2.BackColor = System.Drawing.Color.Yellow;
+            this.resultLabel2.AutoSize = true;
+            this.resultLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.resultLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel2.Location = new System.Drawing.Point(286, 466);
+            this.resultLabel2.Location = new System.Drawing.Point(498, 474);
             this.resultLabel2.Name = "resultLabel2";
-            this.resultLabel2.Size = new System.Drawing.Size(508, 91);
+            this.resultLabel2.Size = new System.Drawing.Size(29, 31);
             this.resultLabel2.TabIndex = 6;
-            this.resultLabel2.Text = "Результат:";
+            this.resultLabel2.Text = "_";
             // 
             // button2
             // 
@@ -244,6 +275,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.resultLabel3);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.label7);
@@ -261,15 +293,27 @@
             this.tabPage3.Text = "Завдання 3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(323, 488);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(151, 31);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Результат:";
+            // 
             // resultLabel3
             // 
-            this.resultLabel3.BackColor = System.Drawing.Color.Yellow;
+            this.resultLabel3.AutoSize = true;
+            this.resultLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.resultLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel3.Location = new System.Drawing.Point(297, 466);
+            this.resultLabel3.Location = new System.Drawing.Point(503, 488);
             this.resultLabel3.Name = "resultLabel3";
-            this.resultLabel3.Size = new System.Drawing.Size(495, 62);
+            this.resultLabel3.Size = new System.Drawing.Size(26, 29);
             this.resultLabel3.TabIndex = 10;
-            this.resultLabel3.Text = "Результат: ";
+            this.resultLabel3.Text = "_";
             // 
             // button3
             // 
@@ -350,6 +394,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.resultLabel4);
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Controls.Add(this.label9);
@@ -365,15 +410,27 @@
             this.tabPage4.Text = "Завдання 4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(384, 488);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(151, 31);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Результат:";
+            // 
             // resultLabel4
             // 
-            this.resultLabel4.BackColor = System.Drawing.Color.Yellow;
-            this.resultLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel4.Location = new System.Drawing.Point(276, 489);
+            this.resultLabel4.AutoSize = true;
+            this.resultLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.resultLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultLabel4.Location = new System.Drawing.Point(555, 488);
             this.resultLabel4.Name = "resultLabel4";
-            this.resultLabel4.Size = new System.Drawing.Size(519, 60);
+            this.resultLabel4.Size = new System.Drawing.Size(29, 31);
             this.resultLabel4.TabIndex = 10;
-            this.resultLabel4.Text = "Результат:";
+            this.resultLabel4.Text = "_";
             // 
             // button4
             // 
@@ -435,6 +492,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label14);
             this.tabPage5.Location = new System.Drawing.Point(4, 27);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -442,6 +500,17 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Завдання 5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(322, 428);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(151, 31);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Результат:";
             // 
             // tabPage6
             // 
@@ -486,6 +555,8 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -528,6 +599,11 @@
         private System.Windows.Forms.TextBox numBox1;
         private System.Windows.Forms.Label resultLabel4;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 

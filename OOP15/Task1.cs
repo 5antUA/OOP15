@@ -21,7 +21,7 @@ namespace OOP15
         {
             if (boxX.Text == string.Empty || boxY.Text == string.Empty)
             {
-                resultLabel1.Text = "Результат: введіть змінні!";
+                resultLabel1.Text = "введіть змінні!";
                 return;
             }
 
@@ -32,18 +32,18 @@ namespace OOP15
 
                 if (X == -4 || X == 0)
                 {
-                    resultLabel1.Text = $"Результат: при X = {X} відповіді не існує!";
+                    resultLabel1.Text = $"при X = {X} відповіді не існує!";
                     return;
                 }
 
                 double result = Math.Log10(Math.Abs((Y - Math.Sqrt(Math.Abs(X))) *
                     (X - (Y / (X + (X * X / 4))))));
 
-                resultLabel1.Text = $"Результат: {result}";
+                resultLabel1.Text = result.ToString();
             }
             catch (FormatException)
             {
-                resultLabel1.Text = "Результат: невірний формат змінних!";
+                resultLabel1.Text = "невірний формат змінних!";
             }
         }
 
@@ -52,7 +52,7 @@ namespace OOP15
         {
             if (numberBox.Text == string.Empty)
             {
-                resultLabel2.Text = "Результат: введіть змінну!";
+                resultLabel2.Text = "введіть змінну!";
                 return;
             }
 
@@ -60,12 +60,12 @@ namespace OOP15
             {
                 double num = Convert.ToDouble(numberBox.Text);
 
-                resultLabel2.Text = $"Результат: \n" +
+                resultLabel2.Text = 
                     $"{Math.Pow(num, 1)}; {Math.Pow(num, 2)}; {Math.Pow(num, 3)}; {Math.Pow(num, 4)}";
             }
             catch (FormatException)
             {
-                resultLabel2.Text = "Результат: невірний формат змінних!";
+                resultLabel2.Text = "невірний формат змінної!";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OOP15
         {
             if (sideA.Text == string.Empty || sideB.Text == string.Empty || sideC.Text == string.Empty)
             {
-                resultLabel3.Text = "Результат: введіть змінну!";
+                resultLabel3.Text = "введіть змінні!";
                 return;
             }
 
@@ -86,20 +86,20 @@ namespace OOP15
 
                 if (A <= 0 || B <= 0 || C <= 0 )
                 {
-                    resultLabel3.Text = "Результат: трикутника не існує";
+                    resultLabel3.Text = "трикутника не існує";
                 }
                 else if (A == B || B == C || A == C)
                 {
-                    resultLabel3.Text = "Результат: трикутник рівнобедрений";
+                    resultLabel3.Text = "трикутник рівнобедрений";
                 }
                 else
                 {
-                    resultLabel3.Text = "Результат: трикутник НЕ рівнобедрений";
+                    resultLabel3.Text = "трикутник НЕ рівнобедрений";
                 }
             }
             catch (FormatException)
             {
-                resultLabel3.Text = "Результат: невірний формат змінних!";
+                resultLabel3.Text = "невірний формат змінних!";
             }
         }
 
@@ -108,7 +108,7 @@ namespace OOP15
         {
             if (numBox1.Text == string.Empty || numBox2.Text == string.Empty)
             {
-                resultLabel4.Text = "Результат: введіть змінну!";
+                resultLabel4.Text = "введіть змінну!";
                 return;
             }
 
@@ -121,16 +121,16 @@ namespace OOP15
 
                 if (result > 32767)
                 {
-                    resultLabel4.Text = "Результат: переповнення!";
+                    resultLabel4.Text = "переповнення!";
                 }
                 else
                 {
-                    resultLabel4.Text = $"Результат: {result}";
+                    resultLabel4.Text = result.ToString();
                 }
             }
             catch (FormatException)
             {
-                resultLabel4.Text = "Результат: невірний формат змінних!";
+                resultLabel4.Text = "невірний формат змінних!";
             }
         }
     }
