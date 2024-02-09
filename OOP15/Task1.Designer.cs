@@ -110,14 +110,15 @@
             // 
             // resultLabel1
             // 
+            this.resultLabel1.AutoSize = true;
             this.resultLabel1.BackColor = System.Drawing.Color.Yellow;
             this.resultLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.resultLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.resultLabel1.Location = new System.Drawing.Point(273, 465);
+            this.resultLabel1.Location = new System.Drawing.Point(526, 468);
             this.resultLabel1.Name = "resultLabel1";
-            this.resultLabel1.Size = new System.Drawing.Size(507, 48);
+            this.resultLabel1.Size = new System.Drawing.Size(29, 31);
             this.resultLabel1.TabIndex = 6;
-            this.resultLabel1.Text = "Результат:";
+            this.resultLabel1.Text = "_";
             // 
             // button1
             // 
