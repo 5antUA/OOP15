@@ -134,6 +134,7 @@ namespace OOP15
             }
         }
 
+
         private void button5_Click(object sender, EventArgs e)
         {
             if (numBox.Text == string.Empty)
@@ -163,6 +164,100 @@ namespace OOP15
             {
                 resultLabel5.Text = "невірний формат змінної!";
             }
+        }
+
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (pointX.Text == string.Empty || pointY.Text == string.Empty)
+            {
+                pointLabel.Text = "Введіть змінні!";
+                return;
+            }
+
+            try
+            {
+                int X = Convert.ToInt32(pointX.Text);
+                int Y = Convert.ToInt32(pointY.Text);
+
+                Point.AddPoint(X, Y);
+                pointList2.Text = Point.PrintArray();
+                pointLabel.Text = "Точка додана!";
+            }
+            catch (FormatException)
+            {
+                pointLabel.Text = "Введіть змінні!";
+            }
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (Point.Len < 2)
+            {
+                resultLabel6.Text = "Необхідно мати більше 2 точок!";
+                return;
+            }
+            resultLabel6.Text = Point.MaxDistance();
+        }
+    }
+
+    class Point
+    {
+        public int X;
+        public int Y;
+
+        static public Point[] points = new Point[30];
+        static public int Len = 0;
+
+        private static int maxDistanceIndex1 = 0;
+        private static int maxDistanceIndex2 = 0;
+        private static double maxDistance = 0;
+
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public static string PrintArray()
+        {
+            string result = string.Empty;
+            for (int i = 0; i < Len; i++)
+            {
+                result += $"({points[i].X}; {points[i].Y}), ";
+            }
+            return result;
+        }
+
+        public static void AddPoint(int x, int y)
+        {
+            if (Len == 30)
+                return;
+
+            points[Len++] = new Point(x, y);
+        }
+
+        public static string MaxDistance()
+        {
+            for (int i = 0; i < Len; i++)
+            {
+                for (int j = i + 1; j < Len; j++)
+                {
+                    double distance = CalculateDistance(points[i], points[j]);
+                    if (distance > maxDistance)
+                    {
+                        maxDistance = distance;
+                        maxDistanceIndex1 = i;
+                        maxDistanceIndex2 = j;
+                    }
+                }
+            }
+
+            return $"Найбільша відстань між точками {maxDistanceIndex1 + 1} і {maxDistanceIndex2 + 1}";
+        }
+
+        private static double CalculateDistance(Point point1, Point point2)
+        {
+            return Math.Sqrt(Math.Pow(point2.X - point1.X, 2) + Math.Pow(point2.Y - point1.Y, 2));
         }
     }
 }
