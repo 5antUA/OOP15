@@ -386,7 +386,7 @@
             this.resultLabel3.AutoSize = true;
             this.resultLabel3.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel3.Location = new System.Drawing.Point(436, 62);
+            this.resultLabel3.Location = new System.Drawing.Point(422, 60);
             this.resultLabel3.Name = "resultLabel3";
             this.resultLabel3.Size = new System.Drawing.Size(29, 31);
             this.resultLabel3.TabIndex = 10;

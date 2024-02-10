@@ -194,7 +194,7 @@ namespace OOP15
         {
             if (Point.Len < 2)
             {
-                resultLabel6.Text = "Необхідно мати більше 2 точок!";
+                resultLabel6.Text = "Необхідно мати більше однієї точки!";
                 return;
             }
             resultLabel6.Text = Point.MaxDistance();
