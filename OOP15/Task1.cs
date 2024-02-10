@@ -17,6 +17,7 @@ namespace OOP15
             InitializeComponent();
         }
 
+        // === TASK 1 ===
         private void button1_Click(object sender, EventArgs e)
         {
             if (boxX.Text == string.Empty || boxY.Text == string.Empty)
@@ -47,7 +48,7 @@ namespace OOP15
             }
         }
 
-
+        // === TASK 2 ===
         private void button2_Click(object sender, EventArgs e)
         {
             if (numberBox.Text == string.Empty)
@@ -69,7 +70,7 @@ namespace OOP15
             }
         }
 
-
+        // === TASK 3 ===
         private void button3_Click(object sender, EventArgs e)
         {
             if (sideA.Text == string.Empty || sideB.Text == string.Empty || sideC.Text == string.Empty)
@@ -103,7 +104,7 @@ namespace OOP15
             }
         }
 
-
+        // === TASK 4 ===
         private void button4_Click(object sender, EventArgs e)
         {
             if (numBox1.Text == string.Empty || numBox2.Text == string.Empty)
@@ -134,7 +135,7 @@ namespace OOP15
             }
         }
 
-
+        // === TASK 5 ===
         private void button5_Click(object sender, EventArgs e)
         {
             if (numBox.Text == string.Empty)
@@ -166,7 +167,7 @@ namespace OOP15
             }
         }
 
-
+        // === TASK 6 ===
         private void button6_Click(object sender, EventArgs e)
         {
             if (pointX.Text == string.Empty || pointY.Text == string.Empty)
@@ -198,8 +199,46 @@ namespace OOP15
             }
             resultLabel6.Text = Point.MaxDistance();
         }
+
+        // === TASK 7 ===
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string str = stringBox.Text;
+            if (str == string.Empty)
+            {
+                resultLabel7.Text = "Необхідно ввести інформацію в поле!";
+                return;
+            }
+
+            if (str.Last() != '.')
+            {
+                resultLabel7.Text = "Рядок повинен закінчуватися точкою!";
+                return;
+            }
+            resultLabel7.Text = string.Empty;
+
+            string temp = string.Empty;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == ' ')
+                    continue;
+                if (str[i] == '.')
+                    break;
+
+                temp += str[i];
+                if (str[i + 1] == ' ' || str[i + 1] == '.')
+                {
+                    if (temp.Length == 3)
+                    {
+                        resultLabel7.Text += temp + ", ";
+                    }
+                    temp = string.Empty;
+                }
+            }
+        }
     }
 
+    // === CLASS POINT FOR TASK 6 ==
     class Point
     {
         public int X;
