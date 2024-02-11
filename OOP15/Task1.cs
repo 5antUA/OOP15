@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOP15
@@ -61,7 +55,7 @@ namespace OOP15
             {
                 double num = Convert.ToDouble(numberBox.Text);
 
-                resultLabel2.Text = 
+                resultLabel2.Text =
                     $"{Math.Pow(num, 1)}; {Math.Pow(num, 2)}; {Math.Pow(num, 3)}; {Math.Pow(num, 4)}";
             }
             catch (FormatException)
@@ -85,7 +79,7 @@ namespace OOP15
                 double B = Convert.ToDouble(sideB.Text);
                 double C = Convert.ToDouble(sideC.Text);
 
-                if (A <= 0 || B <= 0 || C <= 0 )
+                if (A <= 0 || B <= 0 || C <= 0)
                 {
                     resultLabel3.Text = "трикутника не існує";
                 }
@@ -203,6 +197,9 @@ namespace OOP15
         // === TASK 7 ===
         private void button8_Click(object sender, EventArgs e)
         {
+            string dictSkip = " ,:;-";
+            string dictBreak = ".!?";
+
             string str = stringBox.Text;
             if (str == string.Empty)
             {
@@ -210,9 +207,9 @@ namespace OOP15
                 return;
             }
 
-            if (str.Last() != '.')
+            if (!dictBreak.Contains(str.Last()))
             {
-                resultLabel7.Text = "Рядок повинен закінчуватися точкою!";
+                resultLabel7.Text = "Рядок повинен закінчуватися символом!";
                 return;
             }
             resultLabel7.Text = string.Empty;
@@ -220,13 +217,13 @@ namespace OOP15
             string temp = string.Empty;
             for (int i = 0; i < str.Length; i++)
             {
-                if (str[i] == ' ')
-                    continue;
-                if (str[i] == '.')
+                if (dictBreak.Contains(str[i]))
                     break;
+                if (dictSkip.Contains(str[i]))
+                    continue;
 
                 temp += str[i];
-                if (str[i + 1] == ' ' || str[i + 1] == '.')
+                if (dictSkip.Contains(str[i + 1]) || dictBreak.Contains(str[i + 1]))
                 {
                     if (temp.Length == 3)
                     {
@@ -241,11 +238,11 @@ namespace OOP15
     // === CLASS POINT FOR TASK 6 ==
     class Point
     {
-        public int X;
-        public int Y;
+        private readonly int X;
+        private readonly int Y;
 
-        static public Point[] points = new Point[30];
-        static public int Len = 0;
+        private static Point[] points = new Point[30];
+        public static int Len = 0;
 
         private static int maxDistanceIndex1 = 0;
         private static int maxDistanceIndex2 = 0;
@@ -290,7 +287,6 @@ namespace OOP15
                     }
                 }
             }
-
             return $"Найбільша відстань між точками {maxDistanceIndex1 + 1} і {maxDistanceIndex2 + 1}";
         }
 

@@ -838,11 +838,12 @@
             // 
             // button8
             // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.Location = new System.Drawing.Point(433, 267);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(190, 62);
             this.button8.TabIndex = 2;
-            this.button8.Text = "button8";
+            this.button8.Text = "Отримати результат";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
