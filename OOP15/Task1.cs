@@ -14,12 +14,6 @@ namespace OOP15
         // === TASK 1 ===
         private void button1_Click(object sender, EventArgs e)
         {
-            if (boxX.Text == string.Empty || boxY.Text == string.Empty)
-            {
-                resultLabel1.Text = "введіть змінні!";
-                return;
-            }
-
             try
             {
                 double X = Convert.ToDouble(boxX.Text);
@@ -45,12 +39,6 @@ namespace OOP15
         // === TASK 2 ===
         private void button2_Click(object sender, EventArgs e)
         {
-            if (numberBox.Text == string.Empty)
-            {
-                resultLabel2.Text = "введіть змінну!";
-                return;
-            }
-
             try
             {
                 double num = Convert.ToDouble(numberBox.Text);
@@ -67,12 +55,6 @@ namespace OOP15
         // === TASK 3 ===
         private void button3_Click(object sender, EventArgs e)
         {
-            if (sideA.Text == string.Empty || sideB.Text == string.Empty || sideC.Text == string.Empty)
-            {
-                resultLabel3.Text = "введіть змінні!";
-                return;
-            }
-
             try
             {
                 double A = Convert.ToDouble(sideA.Text);
@@ -101,12 +83,6 @@ namespace OOP15
         // === TASK 4 ===
         private void button4_Click(object sender, EventArgs e)
         {
-            if (numBox1.Text == string.Empty || numBox2.Text == string.Empty)
-            {
-                resultLabel4.Text = "введіть змінні!";
-                return;
-            }
-
             try
             {
                 int num1 = Convert.ToInt32(numBox1.Text);
@@ -132,12 +108,6 @@ namespace OOP15
         // === TASK 5 ===
         private void button5_Click(object sender, EventArgs e)
         {
-            if (numBox.Text == string.Empty)
-            {
-                resultLabel5.Text = "введіть змінну!";
-                return;
-            }
-
             try
             {
                 int N = Convert.ToInt32(numBox.Text);
@@ -164,19 +134,13 @@ namespace OOP15
         // === TASK 6 ===
         private void button6_Click(object sender, EventArgs e)
         {
-            if (pointX.Text == string.Empty || pointY.Text == string.Empty)
-            {
-                pointLabel.Text = "Введіть змінні!";
-                return;
-            }
-
             try
             {
                 int X = Convert.ToInt32(pointX.Text);
                 int Y = Convert.ToInt32(pointY.Text);
 
                 Point.AddPoint(X, Y);
-                pointList2.Text = Point.PrintArray();
+                Point.PrintArray(pointList2);
                 pointLabel.Text = "Точка додана!";
             }
             catch (FormatException)
@@ -197,8 +161,8 @@ namespace OOP15
         // === TASK 7 ===
         private void button8_Click(object sender, EventArgs e)
         {
-            string dictSkip = " ,:;-";
-            string dictBreak = ".!?";
+            string dictSkip = " ,:;-"; // список розділових знаків
+            string dictBreak = ".!?"; // список знаків, на яких повинне закінчуватися речення
 
             string str = stringBox.Text;
             if (str == string.Empty)
@@ -206,7 +170,6 @@ namespace OOP15
                 resultLabel7.Text = "Необхідно ввести інформацію в поле!";
                 return;
             }
-
             if (!dictBreak.Contains(str.Last()))
             {
                 resultLabel7.Text = "Рядок повинен закінчуватися символом!";
@@ -235,35 +198,38 @@ namespace OOP15
         }
     }
 
-    // === CLASS POINT FOR TASK 6 ==
+    // === КЛАС POINT ДЛЯ ЗАВДАННЯ 6 ==
     class Point
     {
-        private readonly int X;
-        private readonly int Y;
+        private readonly int X; // поле для зберігання X
+        private readonly int Y; // поле для зберігання Y
 
-        private static Point[] points = new Point[30];
-        public static int Len = 0;
+        private static Point[] points = new Point[30]; // масив точок (кількість точок = 30)
+        public static int Len = 0; // змінна вказує скільки точок знаходиться в масиві
 
         private static int maxDistanceIndex1 = 0;
         private static int maxDistanceIndex2 = 0;
         private static double maxDistance = 0;
 
+        // конструктор
         public Point(int x, int y)
         {
             X = x;
             Y = y;
         }
 
-        public static string PrintArray()
+        // метод для виводу точок
+        public static void PrintArray(Label label)
         {
             string result = string.Empty;
             for (int i = 0; i < Len; i++)
             {
                 result += $"({points[i].X}; {points[i].Y}), ";
             }
-            return result;
+            label.Text = result;
         }
 
+        // метод для додавання точки в масив
         public static void AddPoint(int x, int y)
         {
             if (Len == 30)
@@ -272,6 +238,7 @@ namespace OOP15
             points[Len++] = new Point(x, y);
         }
 
+        // знаходження точок з найбільшою відстанню
         public static string MaxDistance()
         {
             for (int i = 0; i < Len; i++)
@@ -290,6 +257,7 @@ namespace OOP15
             return $"Найбільша відстань між точками {maxDistanceIndex1 + 1} і {maxDistanceIndex2 + 1}";
         }
 
+        // знаходження найбільшої відстані між двома точками
         private static double CalculateDistance(Point point1, Point point2)
         {
             return Math.Sqrt(Math.Pow(point2.X - point1.X, 2) + Math.Pow(point2.Y - point1.Y, 2));

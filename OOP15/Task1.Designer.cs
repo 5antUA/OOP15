@@ -274,7 +274,7 @@
             this.resultLabel2.AutoSize = true;
             this.resultLabel2.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel2.Location = new System.Drawing.Point(451, 60);
+            this.resultLabel2.Location = new System.Drawing.Point(436, 60);
             this.resultLabel2.Name = "resultLabel2";
             this.resultLabel2.Size = new System.Drawing.Size(29, 31);
             this.resultLabel2.TabIndex = 6;
