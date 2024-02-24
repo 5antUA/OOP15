@@ -56,7 +56,6 @@
             this.sideC = new System.Windows.Forms.TextBox();
             this.sideB = new System.Windows.Forms.TextBox();
             this.sideA = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.resultLabel4 = new System.Windows.Forms.Label();
@@ -92,6 +91,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.stringBox = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -112,6 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -303,6 +304,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox7);
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.label6);
@@ -310,7 +312,6 @@
             this.tabPage3.Controls.Add(this.sideC);
             this.tabPage3.Controls.Add(this.sideB);
             this.tabPage3.Controls.Add(this.sideA);
-            this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -354,7 +355,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(763, 214);
+            this.label7.Location = new System.Drawing.Point(770, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(133, 35);
             this.label7.TabIndex = 8;
@@ -363,7 +364,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(455, 214);
+            this.label6.Location = new System.Drawing.Point(462, 214);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 35);
             this.label6.TabIndex = 7;
@@ -372,7 +373,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(158, 214);
+            this.label5.Location = new System.Drawing.Point(150, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 35);
             this.label5.TabIndex = 6;
@@ -407,15 +408,6 @@
             this.sideA.Name = "sideA";
             this.sideA.Size = new System.Drawing.Size(250, 49);
             this.sideA.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(270, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(498, 35);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Трикутник зі сторонами a, b, с є рівнобедреним\r\n";
             // 
             // tabPage4
             // 
@@ -789,6 +781,15 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(218, 51);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(647, 72);
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
+            // 
             // Task1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -833,6 +834,7 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -866,7 +868,6 @@
         private System.Windows.Forms.TextBox sideC;
         private System.Windows.Forms.TextBox sideB;
         private System.Windows.Forms.TextBox sideA;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label resultLabel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label9;
@@ -902,6 +903,7 @@
         private System.Windows.Forms.TextBox stringBox;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label resultLabel7;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
 
