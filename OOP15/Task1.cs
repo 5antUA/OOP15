@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace OOP15
             InitializeComponent();
         }
 
-        // === TASK 1 ===
+        // === ЗАВДАННЯ 1 ===
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -21,7 +22,7 @@ namespace OOP15
 
                 if (X == -4 || X == 0)
                 {
-                    resultLabel1.Text = $"при X = {X} відповіді не існує!";
+                    resultLabel1.Text = $"При X = {X} відповіді не існує!";
                     return;
                 }
 
@@ -32,7 +33,7 @@ namespace OOP15
             }
             catch (FormatException)
             {
-                resultLabel1.Text = "невірний формат змінних!";
+                resultLabel1.Text = "Невірний формат змінних!";
             }
         }
 
@@ -48,11 +49,11 @@ namespace OOP15
             }
             catch (FormatException)
             {
-                resultLabel2.Text = "невірний формат змінної!";
+                resultLabel2.Text = "Невірний формат змінної!";
             }
         }
 
-        // === TASK 3 ===
+        // === ЗАВДАННЯ 3 ===
         private void button3_Click(object sender, EventArgs e)
         {
             try
@@ -63,24 +64,24 @@ namespace OOP15
 
                 if (A <= 0 || B <= 0 || C <= 0)
                 {
-                    resultLabel3.Text = "трикутника не існує";
+                    resultLabel3.Text = "Трикутника не існує";
                 }
                 else if (A == B || B == C || A == C)
                 {
-                    resultLabel3.Text = "трикутник рівнобедрений";
+                    resultLabel3.Text = "Трикутник рівнобедрений";
                 }
                 else
                 {
-                    resultLabel3.Text = "трикутник НЕ рівнобедрений";
+                    resultLabel3.Text = "Трикутник НЕ рівнобедрений";
                 }
             }
             catch (FormatException)
             {
-                resultLabel3.Text = "невірний формат змінних!";
+                resultLabel3.Text = "Невірний формат змінних!";
             }
         }
 
-        // === TASK 4 ===
+        // === ЗАВДАННЯ 4 ===
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -92,7 +93,7 @@ namespace OOP15
 
                 if (result > 32767)
                 {
-                    resultLabel4.Text = "переповнення!";
+                    resultLabel4.Text = "Переповнення!";
                 }
                 else
                 {
@@ -101,18 +102,18 @@ namespace OOP15
             }
             catch (FormatException)
             {
-                resultLabel4.Text = "невірний формат змінних!";
+                resultLabel4.Text = "Невірний формат змінних!";
             }
         }
 
-        // === TASK 5 ===
+        // === ЗАВДАННЯ 5 ===
         private void button5_Click(object sender, EventArgs e)
         {
             try
             {
                 int N = Convert.ToInt32(numBox.Text);
 
-                string result = "не знайдено";
+                string result = "Не знайдено";
                 for (int i = 12; i <= N; i += 10)
                 {
                     int temp1 = i / 10;
@@ -127,11 +128,11 @@ namespace OOP15
             }
             catch (FormatException)
             {
-                resultLabel5.Text = "невірний формат змінної!";
+                resultLabel5.Text = "Невірний формат змінної!";
             }
         }
 
-        // === TASK 6 ===
+        // === ЗАВДАННЯ 6 ===
         private void button6_Click(object sender, EventArgs e)
         {
             try
@@ -152,13 +153,13 @@ namespace OOP15
         {
             if (Point.Len < 2)
             {
-                resultLabel6.Text = "Необхідно мати більше однієї точки!";
+                resultLabel6.Text = "Необхідно мати більше ніж одну точку!";
                 return;
             }
             resultLabel6.Text = Point.MaxDistance();
         }
 
-        // === TASK 7 ===
+        // === ЗАВДАННЯ 7 ===
         private void button8_Click(object sender, EventArgs e)
         {
             string dictSkip = " ,:;-"; // список розділових знаків
@@ -254,7 +255,7 @@ namespace OOP15
                     }
                 }
             }
-            return $"Найбільша відстань між точками {maxDistanceIndex1 + 1} і {maxDistanceIndex2 + 1}";
+            return $"Найбільша відстань між точками [{maxDistanceIndex1 + 1}] та [{maxDistanceIndex2 + 1}]";
         }
 
         // знаходження найбільшої відстані між двома точками

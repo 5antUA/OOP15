@@ -34,7 +34,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.resultLabel1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.boxY = new System.Windows.Forms.TextBox();
@@ -44,13 +43,11 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.resultLabel2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.numberBox = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.resultLabel3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,7 +59,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.resultLabel4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,7 +70,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.resultLabel5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.numBox = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -94,7 +89,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.resultLabel7 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.stringBox = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -156,7 +150,7 @@
             // 
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.resultLabel1);
-            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(142, 361);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(797, 146);
@@ -165,12 +159,12 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(37, 45);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(188, 69);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Розрахувати";
+            this.button1.Text = "Результат";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -180,22 +174,11 @@
             this.resultLabel1.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.resultLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.resultLabel1.Location = new System.Drawing.Point(436, 60);
+            this.resultLabel1.Location = new System.Drawing.Point(266, 61);
             this.resultLabel1.Name = "resultLabel1";
             this.resultLabel1.Size = new System.Drawing.Size(29, 31);
             this.resultLabel1.TabIndex = 6;
             this.resultLabel1.Text = "_";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(279, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(151, 31);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Результат:";
             // 
             // label2
             // 
@@ -262,7 +245,6 @@
             // 
             this.groupBox7.Controls.Add(this.resultLabel2);
             this.groupBox7.Controls.Add(this.button2);
-            this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Location = new System.Drawing.Point(133, 355);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(797, 146);
@@ -274,7 +256,7 @@
             this.resultLabel2.AutoSize = true;
             this.resultLabel2.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel2.Location = new System.Drawing.Point(436, 60);
+            this.resultLabel2.Location = new System.Drawing.Point(275, 60);
             this.resultLabel2.Name = "resultLabel2";
             this.resultLabel2.Size = new System.Drawing.Size(29, 31);
             this.resultLabel2.TabIndex = 6;
@@ -287,20 +269,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(188, 66);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Розрахувати";
+            this.button2.Text = "Результат";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(279, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(151, 31);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Результат:";
             // 
             // label3
             // 
@@ -350,7 +321,6 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.resultLabel3);
             this.groupBox4.Location = new System.Drawing.Point(128, 349);
@@ -359,17 +329,6 @@
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(279, 60);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(151, 31);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "Результат:";
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -377,7 +336,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(188, 69);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Перевірити";
+            this.button3.Text = "Результат";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -386,7 +345,7 @@
             this.resultLabel3.AutoSize = true;
             this.resultLabel3.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel3.Location = new System.Drawing.Point(422, 60);
+            this.resultLabel3.Location = new System.Drawing.Point(281, 60);
             this.resultLabel3.Name = "resultLabel3";
             this.resultLabel3.Size = new System.Drawing.Size(29, 31);
             this.resultLabel3.TabIndex = 10;
@@ -476,7 +435,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.resultLabel4);
             this.groupBox5.Controls.Add(this.button4);
             this.groupBox5.Location = new System.Drawing.Point(123, 351);
@@ -485,23 +443,12 @@
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(279, 60);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 31);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Результат:";
-            // 
             // resultLabel4
             // 
             this.resultLabel4.AutoSize = true;
             this.resultLabel4.BackColor = System.Drawing.Color.Transparent;
             this.resultLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel4.Location = new System.Drawing.Point(436, 60);
+            this.resultLabel4.Location = new System.Drawing.Point(260, 60);
             this.resultLabel4.Name = "resultLabel4";
             this.resultLabel4.Size = new System.Drawing.Size(29, 31);
             this.resultLabel4.TabIndex = 10;
@@ -514,7 +461,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(188, 69);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Отримати результат";
+            this.button4.Text = "Результат";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -583,7 +530,6 @@
             // 
             this.groupBox6.Controls.Add(this.button5);
             this.groupBox6.Controls.Add(this.resultLabel5);
-            this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Location = new System.Drawing.Point(121, 344);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(797, 146);
@@ -597,7 +543,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(188, 65);
             this.button5.TabIndex = 12;
-            this.button5.Text = "Отримати результат";
+            this.button5.Text = "Результат";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -606,22 +552,11 @@
             this.resultLabel5.AutoSize = true;
             this.resultLabel5.BackColor = System.Drawing.Color.White;
             this.resultLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel5.Location = new System.Drawing.Point(436, 63);
+            this.resultLabel5.Location = new System.Drawing.Point(285, 60);
             this.resultLabel5.Name = "resultLabel5";
             this.resultLabel5.Size = new System.Drawing.Size(29, 31);
             this.resultLabel5.TabIndex = 13;
             this.resultLabel5.Text = "_";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(279, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(151, 31);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Результат:";
             // 
             // label15
             // 
@@ -671,7 +606,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(749, 382);
+            this.label18.Location = new System.Drawing.Point(733, 400);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(108, 24);
             this.label18.TabIndex = 25;
@@ -773,16 +708,17 @@
             // 
             // resultLabel6
             // 
+            this.resultLabel6.AutoSize = true;
             this.resultLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.resultLabel6.Location = new System.Drawing.Point(632, 418);
+            this.resultLabel6.Location = new System.Drawing.Point(609, 440);
             this.resultLabel6.Name = "resultLabel6";
-            this.resultLabel6.Size = new System.Drawing.Size(347, 37);
+            this.resultLabel6.Size = new System.Drawing.Size(380, 24);
             this.resultLabel6.TabIndex = 23;
-            this.resultLabel6.Text = "________________________________";
+            this.resultLabel6.Text = "_____________________________________";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(723, 288);
+            this.button7.Location = new System.Drawing.Point(705, 302);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(161, 50);
             this.button7.TabIndex = 19;
@@ -801,8 +737,8 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage7.Controls.Add(this.resultLabel7);
-            this.tabPage7.Controls.Add(this.label11);
             this.tabPage7.Controls.Add(this.button8);
             this.tabPage7.Controls.Add(this.stringBox);
             this.tabPage7.Controls.Add(this.pictureBox6);
@@ -819,31 +755,20 @@
             this.resultLabel7.AutoSize = true;
             this.resultLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.resultLabel7.ForeColor = System.Drawing.Color.Black;
-            this.resultLabel7.Location = new System.Drawing.Point(360, 419);
+            this.resultLabel7.Location = new System.Drawing.Point(435, 365);
             this.resultLabel7.Name = "resultLabel7";
             this.resultLabel7.Size = new System.Drawing.Size(44, 31);
             this.resultLabel7.TabIndex = 9;
             this.resultLabel7.Text = "__";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(203, 419);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 31);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Результат:";
-            // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(433, 267);
+            this.button8.Location = new System.Drawing.Point(209, 351);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(190, 62);
+            this.button8.Size = new System.Drawing.Size(188, 65);
             this.button8.TabIndex = 2;
-            this.button8.Text = "Отримати результат";
+            this.button8.Text = "Результат";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -950,7 +875,6 @@
         private System.Windows.Forms.TextBox numBox1;
         private System.Windows.Forms.Label resultLabel4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox numBox;
@@ -971,18 +895,13 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox stringBox;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label resultLabel7;
-        private System.Windows.Forms.Label label11;
     }
 }
 
